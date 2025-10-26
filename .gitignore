@@ -1,0 +1,56 @@
+# -----------------------------------------------------------------------------
+# General Python Files
+# -----------------------------------------------------------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+.env # Keep environment variables out of source control
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+
+# -----------------------------------------------------------------------------
+# Virtual Environment
+# -----------------------------------------------------------------------------
+# Standard name for virtual environments (often 'venv' or '.venv')
+venv/
+.venv/
+
+# If using UV, the cache and lock files are usually managed outside of VCS
+# but you might want to ignore the lock file if you strictly manage
+# dependencies in another way (e.g., poetry/pip-tools) and only use UV for speed.
+# However, usually, you DO commit the lock file for reproducible builds.
+# We ignore the cache and temp files.
+.uv/
+.uv-*-tmp/
+
+# -----------------------------------------------------------------------------
+# Operating System Files
+# -----------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------------------------------------------------------
+# IDE/Editor Files
+# -----------------------------------------------------------------------------
+# VS Code
+.vscode/
+
+# PyCharm/IntelliJ
+.idea/
+
+# -----------------------------------------------------------------------------
+# Build/Distribution
+# -----------------------------------------------------------------------------
+dist/
+build/
+*.egg-info/
+
+# -----------------------------------------------------------------------------
+# Media
+# -----------------------------------------------------------------------------
+media/*
