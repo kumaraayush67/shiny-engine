@@ -11,7 +11,7 @@ from sqlmodel import SQLModel, Field, JSON, Column, Relationship
 
 
 RECORDS_DIR = Path("media/records")
-RECORDS_DIR.mkdir(exist_ok=True)
+RECORDS_DIR.mkdir(parents=True, exist_ok=True)
 
 
 class BatchStatus(str, Enum):
